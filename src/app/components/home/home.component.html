@@ -1,0 +1,22 @@
+<div class="topTitle">
+    <h1 class="title">Consulte seu endereço através do CEP</h1>
+</div>
+
+<div class="inputLocationBox">
+    <input id="inputLocation" class="inputLocation" type="text" placeholder="Digite o CEP" [(ngModel)]="cep"
+        (input)="buscarCep(cep)" maxlength="8" />
+</div>
+
+
+@if(localizacaoInfos && cep !== "" && cep.length < 9 && cep.length> 0 && localizacaoInfos.cep === cep){
+    <div class="locationInfo">
+        <p class="pInfo" id="city"><i id="flagIcon" class="fa-solid fa-flag"></i>{{localizacaoInfos.city}} - {{localizacaoInfos.state}}</p>
+        <p class="pInfo" id="neighborhood">Bairro: <b class="pInfoBold">{{localizacaoInfos.neighborhood}}</b></p>
+        <p class="pInfo" id="street">Logradouro: <b class="pInfoBold">{{localizacaoInfos.street}}</b></p>
+        <p class="pInfo" id="cep">CEP: <b class="pInfoBold">{{localizacaoInfos.cep}}</b></p>
+    </div>
+    } @else {
+    <div class="locationInfoElse">
+        <p id="alertType"><i id="alertIcon" class="fa-solid fa-circle-exclamation"></i> Digite um CEP válido, contendo apenas números.</p>
+    </div>
+    }

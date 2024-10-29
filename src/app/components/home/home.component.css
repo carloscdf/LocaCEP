@@ -1,0 +1,189 @@
+/*Estilização do input*/
+
+
+
+.inputLocationBox{
+    margin: 0 auto;
+    margin-top: 30px;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--input-background);
+    border-radius: var(--input-border-radius);
+}
+
+.inputLocation{
+    outline: var(--objects-outline);
+    background-color: var(--input-background);
+    border-radius: var(--input-border-radius);
+    font-size: 20px;
+    padding: 30px;
+    width: 650px;
+    height: 20px;
+    border-radius: none;
+    color:  var(--input-color);
+}
+
+.inputLocation:focus{
+    outline: 2px solid var(--input-selection);
+}
+
+/*Title*/
+
+.topTitle{
+    margin: 0 auto;
+    margin-top: 30px;
+    width: 710px;
+}
+
+.title{
+    color: var(--title-color);
+    text-align: center;
+    font-weight: 500;
+}
+
+/*Location not found*/
+
+.locationInfoElse{
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--red-alert-background);
+    width: 670px;
+    border-radius: var(--border-radius-alert);
+    color: var(--red-alert-font);
+}
+
+#alertType{
+    display: flex;
+    align-items: center;
+}
+
+#alertIcon{
+    margin-right: 10px;
+}
+
+/*Location Info */
+
+.locationInfo{
+    border-top: var(--locationInfo-border-top);
+    border-left: var(--objects-outline);
+    border-right: var(--objects-outline);
+    border-bottom: var(--objects-outline);
+    margin: 0 auto;
+    margin-top: 30px;
+    padding: 20px;
+    width: 670px;
+    border-radius: var(--border-radius-alert);
+    background-color: var(--locationInfo-background);
+    color: var(--locationInfo-color);
+}
+
+.pInfo:first-child, .pInfo:last-child{
+    margin-bottom: 0px;
+}
+
+#city{
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: var(--locationInfo-border);
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+#flagIcon{
+    margin-right: 10px;
+}
+
+.pInfo{ 
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.pInfoBold{
+    font-weight: 500;
+}
+
+@media(max-width: 740px) {
+    .inputLocation{
+        width: 550px;
+    }
+
+    .topTitle{
+        width: 570px;
+    }
+    
+    .locationInfoElse{
+        width: 570px;
+    }
+    
+    .locationInfo{
+        width: 570px;
+    }
+}
+
+@media(max-width: 630px) {
+    .inputLocation{
+        width: 450px;
+    }
+
+    .topTitle{
+        width: 470px;
+    }
+    
+    .locationInfoElse{
+        width: 470px;
+    }
+    
+    .locationInfo{
+        width: 470px;
+    }
+}
+
+@media(max-width: 530px) {
+    .inputLocation{
+        width: 350px;
+    }
+
+    .topTitle{
+        width: 370px;
+    }
+
+    .title{
+        font-size: 28px;
+    }
+    
+    .locationInfoElse{
+        width: 370px;
+    }
+    
+    .locationInfo{
+        width: 470px;
+    }
+}
+
+@media(max-width: 430px) {
+    .inputLocation{
+        width: 250px;
+    }
+
+    .topTitle{
+        width: 270px;
+    }
+
+    .title{
+        font-size: 24px;
+    }
+    
+    .locationInfoElse{
+        width: 270px;
+    }
+    
+    .locationInfo{
+        width: 270px;
+    }
+}

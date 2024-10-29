@@ -1,0 +1,22 @@
+:root{
+    --objects-outline: 2px solid #dbdbdb;
+    --title-color: #131d4b; 
+    --input-background: #f7f7f7;
+    --input-border-radius: 10px;
+    --input-selection: #131d4b;
+    --input-color: #131d4b;
+    --border-radius-alert: 10px;
+    --red-alert-background: #ffdadb;
+    --red-alert-font: #400008;
+    --locationInfo-border: 2px solid #dbdbdb;
+    --locationInfo-background: #f7f7f7;
+    --locationInfo-color: #131d4b;
+    --locationInfo-border-top: 4px solid #131d4b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Rubik", sans-serif;
+}

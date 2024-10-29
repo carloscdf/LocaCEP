@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 710px;
+    margin: 0 auto;
+
+}
+
+.footerInfo{
+    margin-bottom: 20px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footerInfo > p {
+    color: var(--title-color);
+}
+
+.footerInfo > p > a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+.footerInfo > p > a:hover{
+    text-decoration: underline;
+}
